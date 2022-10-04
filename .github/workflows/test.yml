@@ -32,15 +32,15 @@ jobs:
         run: |
              git config --global user.email "you@example.com"
              git config --global user.name "nutan"
-             git tag -a v1.2 -m "initial"
+             git tag -a v1.3 -m "initial"
              git push origin --tags
 
 
       #qq Runs a set of commands using the runners shell
       - name: Create branch from the tag
         run: |
-             git checkout -b v1.2
-             git push -u origin v1.2
+             git checkout -b v1.3
+             git push origin v1.3:v1.3
 
       - name: Find second last commit
         run: git rev-parse HEAD~1  
