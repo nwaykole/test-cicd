@@ -33,6 +33,8 @@ jobs:
              git config --global user.email "you@example.com"
              git config --global user.name "nutan"
              git tag -a v1.0 -m "initial"
+             git push
+
 
       # Runs a set of commands using the runners shell
       - name: Create branch from the tag
