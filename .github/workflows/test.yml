@@ -33,7 +33,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Create branch from the tag
-        run: git checkout v1.0
+        run: git checkout -b v1.0
 
       - name: Find second last commit
         run: git rev-parse HEAD~1  
