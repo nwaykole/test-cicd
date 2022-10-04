@@ -33,6 +33,7 @@ jobs:
              git config --global user.email "you@example.com"
              git config --global user.name "nutan"
              git tag -a v1.1 -m "initial"
+             git commit -m "created tag"
              git push
 
 
