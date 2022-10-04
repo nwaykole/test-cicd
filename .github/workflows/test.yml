@@ -49,7 +49,7 @@ jobs:
 
       - name: Find changed files
         run: |
-            file=git diff --name-only `$out` HEAD~0
+            git diff --name-only "$out" HEAD~0
             echo $file
 
       - name: Zip the files
