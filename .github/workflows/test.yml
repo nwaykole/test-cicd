@@ -27,12 +27,28 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Tag the latest commit
-        run: ls
+        run: git tag -a v1.0 -m "initial release"
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo $PWD
-      - name: Run a multi-line script
-        run: |
-          
+      - name: Create branch from the tag
+        run: git checkout v1.0
+
+      - name: Find second last commit
+        run: git rev-parse HEAD~1  
+
+      - name: Find changed files
+        run: echo test
+
+      - name: Zip the files
+        run: echo test
+
+      - name: Initialise GoogleCli
+        run: echo test
+
+      - name: Upload the Google Composer
+        run: echo test
+
+
+      - name: Connection to Jfrog
+        run: echo test
+
