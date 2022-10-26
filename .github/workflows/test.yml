@@ -53,7 +53,7 @@ jobs:
             ls
 
       - name: Zip the files
-        run: echo test
+        run: echo testnn
 
       - name: Initialise GoogleCli
         run: echo test
