@@ -50,8 +50,7 @@ jobs:
 
       - name: Find changed files
         run: |
-            git diff --name-only $out HEAD~0
-            echo $file
+            ls
 
       - name: Zip the files
         run: echo test
